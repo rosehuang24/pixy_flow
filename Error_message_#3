@@ -1,0 +1,22 @@
+[pixy] pixy 1.0.0.beta1
+[pixy] See documentation at https://pixy.readthedocs.io/en/latest/
+
+[pixy] Validating VCF and input parameters...
+[pixy] Checking write access...OK
+[pixy] Checking CPU configuration...OK
+[pixy] Checking for invariant sites...OK
+[pixy] Checking chromosome data...OK
+[pixy] Checking intervals/sites...OK
+[pixy] Checking sample data...OK
+[pixy] All initial checks past!
+
+[pixy] Preparing for calculation of summary statistics: pi, dxy, fst
+[pixy] Data set contains 2 population(s), 1 chromosome(s), and 23 sample(s)
+[pixy] Window size: 20000 bp
+
+[pixy] Started calculations at 17:06:59 on 2021-04-21
+[pixy] Using 1 out of 24 available CPU cores
+
+[pixy] Processing chromosome/contig 16...
+[pixy] Calculating statistics for region 16:1-2844556...
+TypeError: zip argument #3 must support iteration
