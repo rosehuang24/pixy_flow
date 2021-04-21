@@ -42,8 +42,8 @@ pixy --stats pi \
 pixy --stats pi \
 --vcf allsites_filtered_${chrm}.vcf.gz \
 --chromosomes ${chrm} \
---interval_start 60000001 \
---interval_end 80000000 \
+--interval_start 600001 \
+--interval_end 800000 \
 --window_size 20000 \
 --populations pop.pixy.txt \
 --output_prefix ${chrm}_out_pi
