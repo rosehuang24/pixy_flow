@@ -53,7 +53,7 @@ pixy --stats fst \
 --vcf allsites_filtered_${chrm}.vcf.gz \
 --chromosomes ${chrm} \
 --window_size 20000 \
---populations pop.pixy.txt \
+--populations 2pops.pixy.txt \
 --output_prefix ${chrm}_out_fst
 
 ```
