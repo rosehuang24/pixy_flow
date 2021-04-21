@@ -30,7 +30,30 @@ tabix allsites_filtered_${chrm}.vcf.gz
 
 3. Run pixy 
 ```
-pixy --stats pi --vcf allsites_filtered_${chrm}.vcf.gz --chromosomes ${chrm} --window_size 20000 --populations pop.pixy.txt --output_prefix ${chrm}_out_pi
-pixy --stats fst --vcf allsites_filtered_${chrm}.vcf.gz --chromosomes ${chrm} --window_size 20000 --populations pop.pixy.txt --output_prefix ${chrm}_out_fst
+#1
+pixy --stats pi \
+--vcf allsites_filtered_${chrm}.vcf.gz \
+--chromosomes ${chrm} \
+--window_size 20000 \
+--populations pop.pixy.txt \
+--output_prefix ${chrm}_out_pi
+
+#2
+pixy --stats pi \
+--vcf allsites_filtered_${chrm}.vcf.gz \
+--chromosomes ${chrm} \
+--interval_start 60000001 \
+--interval_end 80000000 \
+--window_size 20000 \
+--populations pop.pixy.txt \
+--output_prefix ${chrm}_out_pi
+
+#3
+pixy --stats fst \
+--vcf allsites_filtered_${chrm}.vcf.gz \
+--chromosomes ${chrm} \
+--window_size 20000 \
+--populations pop.pixy.txt \
+--output_prefix ${chrm}_out_fst
 
 ```
