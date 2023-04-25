@@ -7,7 +7,7 @@
 
 ```
 vcftools --gzvcf $inputvcf \
---max-maf 0 --minQ 30 --remove-indels --max-missing 0.5 --min-meanDP 10  \
+--max-maf 0 --remove-indels --max-missing 0.5 --min-meanDP 10  \
 --recode --recode-INFO-all --stdout | bgzip -c > snp_invariants_${chrm}.vcf.gz
 
 tabix snp_invariants_${chrm}.vcf.gz
